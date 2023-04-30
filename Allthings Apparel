@@ -1,0 +1,22 @@
+CREATE TABLE allthings_apparel (id INTEGER PRIMARY KEY, name TEXT, quantity INTEGER, price INTEGER, aisle INTEGER);
+INSERT INTO allthings_apparel VALUES (1, "Workout Top", 100, 25, 1); 
+INSERT INTO allthings_apparel VALUES (2, "Biker Shorts", 100, 30, 2);
+INSERT INTO allthings_apparel VALUES (3, "Leggings", 100, 35, 3);
+INSERT INTO allthings_apparel VALUES (4, "Long Sleeve Workout Top", 100, 40, 4); 
+INSERT INTO allthings_apparel VALUES (5, "Wind Breaker Jacket", 100, 50, 5); 
+INSERT INTO allthings_apparel VALUES (6, "Oversized Sweater", 100, 50, 6);
+INSERT INTO allthings_apparel VALUES (7, "Crewneck", 100, 50, 7);
+INSERT INTO allthings_apparel VALUES (8, "Hair Ties", 100, 25, 8);
+INSERT INTO allthings_apparel VALUES (9, "Workout Shoes", 100, 65, 9);
+INSERT INTO allthings_apparel VALUES (10, "Mini Duffle Bag", 100, 75, 10);
+INSERT INTO allthings_apparel VALUES (11, "XL Duffle Bag", 100, 80, 11);
+INSERT INTO allthings_apparel VALUES (12, "Oversized T-shirt", 100, 40, 12);
+INSERT INTO allthings_apparel VALUES (13, "Socks", 100, 25, 13);
+INSERT INTO allthings_apparel VALUES (14, "Supplements", 100, 50, 14);
+INSERT INTO allthings_apparel VALUES (15, "Assessories", 100, 30, 15);
+
+SELECT * FROM allthings_apparel;
+SELECT * FROM allthings_apparel ORDER BY aisle; 
+SELECT * FROM allthings_apparel ORDER BY quantity; 
+SELECT * FROM allthings_apparel ORDER BY price;
+SELECT SUM(price) FROM allthings_apparel; 
